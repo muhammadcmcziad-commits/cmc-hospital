@@ -1,0 +1,6 @@
+{
+  "name": "CMC HOSPITAL",
+  "description": "CMC HOSPITAL - سیستەمی بەڕێوەبردنی پەرستاران و جیاکردنەوەی بەشەکانی نەخۆشخانە، داغڵبوونی نێرسەکان بە ئایدی تایبەت و تۆمارکردنی شیفتەکان بە کۆنترۆڵی تەواوی ئەدمین.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

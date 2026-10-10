@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html.dark {
+    color-scheme: dark;
+  }
+
+  /* Explicit text colors to prevent dark mode mobile browsers from rendering white-on-white */
+  input,
+  textarea,
+  select {
+    color: #0f172a; /* slate-900 */
+  }
+
+  /* When dark mode is active on html, ensure inputs adapt cleanly with dark backgrounds and light text */
+  html.dark input,
+  html.dark textarea,
+  html.dark select {
+    color: #f8fafc !important; /* slate-50 */
+    background-color: #1e293b; /* slate-800 */
+    border-color: #334155; /* slate-700 */
+  }
+
+  /* Placeholder styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #94a3b8; /* slate-400 */
+  }
+
+  html.dark input::placeholder,
+  html.dark textarea::placeholder {
+    color: #64748b; /* slate-500 */
+  }
+
+  /* Select dropdown options styling in dark mode */
+  html.dark select option {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+}
+
